@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<link rel="shortcut icon" href="http://findicons.com/files/icons/1799/bathroom/16/duck.png" type="image/ico" />
+<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+<html><title>páNOTAS</title><head>
+    <meta charset="UTF-8">    
+    </head><body><style>
+      
+#navbar { font: 900 11px open sans; letter-spacing: 1px; color: #fff; text-transform: uppercase; border-top: 4px solid #fff; padding-top: 10px; padding-bottom: 45px; width: 370px; margin-left: 200px; margin-top: -15px; }
+#navbar a { padding-right: 44px; cursor: pointer; }
+#carrossel { padding: 50px 20px; width: 1200px; }
+#carrossel img { margin: 0px 10px; }
+#carrossel a { cursor: pointer; color: white; font-size: 100px; margin-top: 10px; position: absolute; }
+#pa-home { background-color: #f3f9ff; margin: 15px; }
+#pa-home t { color: #fff; font: 100 130px Open Sans; }
+#pa-home a { text-decoration: none; }
+@keyframes cores {
+0%{ background-color: #f1e573; opacity: 0.3; }
+33%{ background-color: #5cd9ea; opacity: 0.3; } 
+66%{ background-color: #e85d5d; opacity: 0.3; }
+100%{ background-color: #f1e573; opacity: 0.3; } }
+
+#pa-home tit { font: italic bold 30px Playfair Display; text-align: left; display: block;  line-height: 100%; }
+#pa-home subt { font: 600 11px open sans; text-transform: uppercase; letter-spacing: 1.5px; }
+
+.mat-capa { margin-bottom: 100px; background: #eee no-repeat top center; width: 100%; padding: 70px 0px; height: 460px; font: 400 13px lato; text-align: justify;  }
+.mat-capa p { margin-bottom: -12px; text-indent: 25px; line-height: 140%; }
+.mat-capa l { line-height: 140%; }
+
+.mat-quote { font: 700 italic 25px playfair display; text-align: left; line-height: 100%; padding: 30px 0px; color: #5cd9ea; }
+
+    .sp-slideshow { position: relative; margin: 0px auto; width: 1200px; height: 600px; }
+    .sp-content { background: #fff; position: relative; width: 100%;height: 100%;overflow: hidden;}
+    
+    .sp-parallax-bg {background: #f3f9ff; -webkit-background-size: cover;-moz-background-size: cover;background-size: cover;position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;}
+    
+    .sp-slideshow input {position: absolute;bottom: 15px;left: 50%;width: 9px;height: 9px;z-index: 1001;cursor: pointer;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);opacity: 0;}
+    
+    .sp-slideshow input + label {position: absolute;bottom: 15px;left: 50%;width: 6px;height: 6px;display: block;z-index: 1000;border: 3px solid #fff;border: 3px solid rgba(255,255,255,0.9);-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;-webkit-transition: background-color linear 0.1s;-moz-transition: background-color linear 0.1s;-o-transition: background-color linear 0.1s;-ms-transition: background-color linear 0.1s;transition: background-color linear 0.1s;}
+    .sp-slideshow input:checked + label {background-color: #fff; background-color: rgba(255,255,255,0.9);}
+    
+</style>
+
+
+<style>
+    .sp-selector-1, .button-label-1 {margin-left: -36px;}
+    .sp-selector-2, .button-label-2 {margin-left: -18px;}
+    .sp-selector-3, .button-label-3 {margin-left: 0px;}
+    .sp-selector-4, .button-label-4 {margin-left: 18px;}
+    .sp-selector-5, .button-label-5 {margin-left: 36px;}
+    
+    .sp-arrow {position: absolute;top: 50%;width: 28px;height: 37px;margin-top: -19px;display: none;cursor: pointer;z-index: 1000; background: center top transparent url(http://i.imgur.com/hEfN7rx.png) no-repeat;-webkit-transition: opacity linear 0.3s;-moz-transition: opacity linear 0.3s;-o-transition: opacity linear 0.3s;-ms-transition: opacity linear 0.3s;
+    transition: opacity linear 0.3s;}
+    .sp-arrow:hover{opacity: 1;}
+    .sp-arrow:active{margin-top: -18px;}
+    .sp-selector-1:checked ~ .sp-arrow.sp-a2,
+    .sp-selector-2:checked ~ .sp-arrow.sp-a3,
+    .sp-selector-3:checked ~ .sp-arrow.sp-a4,
+    .sp-selector-4:checked ~ .sp-arrow.sp-a5 {right: 15px;display: block;background-position: top right;}
+    .sp-selector-2:checked ~ .sp-arrow.sp-a1,
+    .sp-selector-3:checked ~ .sp-arrow.sp-a2,
+    .sp-selector-4:checked ~ .sp-arrow.sp-a3,
+    .sp-selector-5:checked ~ .sp-arrow.sp-a4 {left: 15px;display: block;background-position: top left;}
+    
+    
+    .sp-slideshow input:checked ~ .sp-content {-webkit-transition: background-position linear 0.6s, background-color linear 0.8s;-moz-transition: background-position linear 0.6s, background-color linear 0.8s;-o-transition: background-position linear 0.6s, background-color linear 0.8s;-ms-transition: background-position linear 0.6s, background-color linear 0.8s;transition: background-position linear 0.6s, background-color linear 0.8s;}
+    
+    .sp-slideshow input:checked ~ .sp-content .sp-parallax-bg {-webkit-transition: background-position linear 0.7s;-moz-transition: background-position linear 0.7s;-o-transition: background-position linear 0.7s;-ms-transition: background-position linear 0.7s;transition: background-position linear 0.7s;}
+    
+    input.sp-selector-1:checked ~ .sp-content {background-position: 0 0;background-color: #727b7f;} 
+    input.sp-selector-2:checked ~ .sp-content {background-position: -100px 0; background-color:#7f7276;} 
+    input.sp-selector-3:checked ~ .sp-content {background-position: -200px 0;background-color: #737f72;} 
+    input.sp-selector-4:checked ~ .sp-content {background-position: -300px 0;background-color: #79727f;} 
+    input.sp-selector-5:checked ~ .sp-content {background-position: -400px 0;background-color: #7d7f72;} 
+    
+    input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-3:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-4:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    input.sp-selector-5:checked ~ .sp-content .sp-parallax-bg {background-position: 0 0;} 
+    
+    .sp-slider { position: relative;left: 0; width: 500%;height: 100%;list-style: none; margin: 0;padding: 0;-webkit-transition: left ease-in 0.8s; -moz-transition: left ease-in 0.8s; -o-transition: left ease-in 0.8s; -ms-transition: left ease-in 0.8s;transition: left ease-in 0.8s; }
+    
+    .sp-slider > li {
+    height:100%;
+    padding:0 60px;
+    width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    float:left;
+    text-align:center;
+    opacity:0.4; 
+    -webkit-transition:opacity ease-in 0.4s 0.8s;
+    -moz-transition:opacity ease-in 0.4s 0.8s;
+    -o-transition:opacity ease-in 0.4s 0.8s;
+    -ms-transition:opacity ease-in 0.4s 0.8s;
+    transition:opacity ease-in 0.4s 0.8s; } 
+    
+    .sp-slider > li img{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;display: block;margin: 0 auto;padding: 40px 0 50px 0;max-height: 100%;max-width: 100%;}
+    
+    
+    input.sp-selector-1:checked ~ .sp-content .sp-slider {left: 0;}
+    input.sp-selector-2:checked ~ .sp-content .sp-slider {left: -100%;}
+    input.sp-selector-3:checked ~ .sp-content .sp-slider {left: -200%;}
+    input.sp-selector-4:checked ~ .sp-content .sp-slider {left: -300%;}
+    input.sp-selector-5:checked ~ .sp-content .sp-slider {left: -400%;}
+    
+    
+    input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
+    input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),
+    input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
+    input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
+    input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){ opacity: 1; }
+    
+
+
+
+</style>
+<center>
+<div style="background-color: #fff; width: 100%; height: 20px; position: fixed; top: 0; z-index: 99999999;"></div>
+<div style="background-color: #fff; width: 100%; height: 20px; position: fixed; bottom: 0; z-index: 99999999;"></div>
+<div id="pa-home">
+
+      <div style="background: #f1e573; padding-top: 70px; padding-bottom: 50px;">
+      <a href="https://paideias.github.io/home/"><t>PÁ IDEIAS</t></a>
+            <div id="navbar"><a>comprar</a><a>edições</a><a>favoritos</a><a>contato</a></div>
+      <div id="carrossel">
+      <a style="margin-left: -80px;">❮</a>
+      
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        <img src="http://i.imgur.com/jLdwSI1.png" />
+        
+      <a style="margin-left: 25px;">❯</a>  
+      </div></div>
+
+  
+
+
+
+
+
+
+<div class="sp-slideshow">
+            
+   <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+   <label for="button-1" class="button-label-1"></label>
+    
+   <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+   <label for="button-2" class="button-label-2"></label>
+    
+   <input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+   <label for="button-3" class="button-label-3"></label>
+    
+    
+   <label for="button-1" class="sp-arrow sp-a1"></label>
+   <label for="button-2" class="sp-arrow sp-a2"></label>
+    <label for="button-3" class="sp-arrow sp-a3"></label>
+
+
+    
+   <div class="sp-content">
+       <div class="sp-parallax-bg"></div>
+       <ul class="sp-slider clearfix">
+           <li>
+           
+           
+           
+           
+                      <div class="mat-capa" style="background: #fff;">
+ 
+
+ <div style="padding-left: 60px; margin-top: -32px; width: 350px; float: left;">
+ <tit style="width: 350px; margin-bottom: 30px;">Quadrinhos de Star Wars ganham coleção com 70 volumes no Brasil</tit>
+
+<p>A franquia Star Wars vive um dos seus melhores momentos em décadas. Sobretudo aqui no Brasil. A editora Planeta D’Agostini vai lançar por aqui uma coleção com 70 volumes de quadrinhos da série. O primeiro número sai em outubro.</p>
+<p>A revelação foi feita pelo Universo HQ. A Coleção Star Wars reúne histórias do chamado “universo expandido” da série criada por George Lucas e cujo primeiro filme foi lançado em 1977. Os volumes serão em capa dura, semelhantes à <i>Coleção Oficial de Graphic Novels da Marvel</i>, que está sendo publicado pela editora Salvat.</p>
+<p>O primeiro volume da coleção Star Wars chegará às bancas no dia 30 de outubro, ao preço promocional de R$ 9,99. A segunda edição sai por R$ 22,90, com os demais livros sendo vendidos por R$ 34,90. Até o 15º volume, a coleção terá periodicidade quinzenal e depois passa a ser semanal. A distribuição será setorizada, o que indica que leitores do Nordeste deverão ter acesso apenas no ano que vem. No entanto, a editora já anunciou que será disponibilizado um sistema de assinaturas para todo o Brasil.</p>
+</div>
+  
+  
+ <div style="padding: 60px 160px; margin-top: -32px; width: 350px; float: left;">
+ <tit style="width: 350px; margin-bottom: 30px;">Artista plástico baiano Bel Borba traz colagens e intervenções de Salvador em nova expo</tit>
+
+<p>O artista plástico baiano Bel Borba, referência na arte da colagem e intervenções urbanas, inicia exposição na Caixa Cultural do Recife a partir dessa quarta (13).</p>
+<p>São 88 obras reunidas na mostra <i>Bel Borba Intervém Urbano</i>, que retratam o passado, o presente e o futuro da musa inspiradora do artista, a cidade de Salvador. Para a temporada na capital pernambucana, o baiano produziu cinco obras exclusivas e inéditas, com colagens sobre paisagens recifenses.</p>
+<p>A abertura da exposição será às 19h30 de amanhã(12). A visitação é gratuita, das 12h às 20h de terça a sábado e das 10h às 17h nos domingos até o dia 12 de outubro.</p>
+</div>
+</div>
+
+           
+           
+           
+           
+  
+</li><li>
+  
+              
+              
+                
+                
+                
+                <div class="mat-capa" style="background: #fff;">
+ 
+
+ <div style="padding-left: 60px; margin-top: -32px; width: 450px; float: left;">
+ <tit style="width: 350px; margin-left: 100px; text-align: right; margin-bottom: 30px;">Novos nomes das artes visuais do Recife presentes no #urbano</tit>
+<tit style="width: 450px; margin-bottom: 30px; margin-top: 150px;">Bazar secreto no Recife traz roupas do figurino de filmes como Amarelo Manga</tit>
+
+<p>As figurinistas Bárbara Cunha e Carol Azevedo abrem seu Bazar Secreto neste domingo (6), no Casamarela Coworking, em Casa Amarela, no Recife.</p>
+<p>Serão postas à disposição cerca de 250 artigos garimpadas pelo mundo, em viagens para pesquisas de figurinos na Índia, França, Hungria, Portugal e países da África. “São acessórios e roupas usados em filmes como <i>País do Desejo, Deserto Feliz, Uma Estrela par Ioiô,</i> e ainda <i>Amarelo Manga</i>, meu primeiro trabalho”, revela Bárbara Cunha. A lista tem ainda roupas de série de TV e de espetáculos de teatro usadas por atores como Hermila Guedes, Maria Padilha, Nash Laila, Zezé Mota, Fábio Assunção, Mariana Ximenes, entre outros.</p>
+
+
+</div> <div style="padding-right: 60px; margin-top: -40px; width: 450px; float: right;">
+ 
+<p>Novos nomes da arte urbana do Recife fazem parte do projeto #urbano, da Natura, que reuniu manifestações artísticas, como fotografia, poesia-visual, ilustração digital, gravura, pintura, xilogravura, entre outros tipos de artes plásticas. A curadoria na cidade foi com a Nuvem Produções. Um evento para apresentar os artistas aconteceu nessa quarta (6), no Café Castro Alves, no Centro.</p>
+<p>Cristina Machado, Galo de Souza, Arem, Paulo do Amparo, Danilo Galvão, Imarginal, Jotazeroff, David Nascimento, Bozó Bacamarte e Caio Lobo foram escolhidos para a exposição. O projeto promoveu o lançamento do novo perfume da Natura, que foi lançado este mês.</p>
+<p style="margin-bottom: 48px;">Para a seleção das dez expressões artísticas expostas no encontro, os critérios utilizados pela Nuvem foram: mérito artístico (qualidade estética e de acabamento final do trabalho) e coesão entre obra e tema proposto: “desperte seu olhar para a arte da sua cidade”. “Além de motivar a observação da beleza desse cenário vibrante e dinâmico, queremos reconhecer a arte urbana e renovar a nossa relação com os grandes centros”, explica Daniel Silveira, diretor regional da Natura no Norte e Nordeste.</p>
+
+
+<p>Além da conjunção de produtos de filmes, as duas figurinistas destacam seu acervos pessoais. “Temos feito uma curadoria minuciosa ao longo dos últimos anos e pela primeira vez estamos nos desapegando de objetos e peças do nosso acervo cultivado entre tantos trabalhos, do nosso baú secreto”, completa Carol Azevedo cujo rico acervo é buscado por profissionais como Chris Garrido, figurinista do filme <i>Tatuagem</i>, que trouxe várias peças dos anos 1970.</p>
+<p>A Casamarela fica na Rua Professor Álvaro Lima, 47, Casa Amarela.</p>
+</div>
+ 
+</div>
+                
+                
+                
+                
+                
+  
+    
+  </li>
+<li>
+             
+             
+             
+                        
+                        <div class="mat-capa" style="background: #fff;">
+ 
+
+ <div style="padding-left: 60px; margin-top: -32px; width: 350px; float: left;">
+ <tit style="width: 350px; margin-bottom: 30px;">Filme pernambucano Ventos de Agosto ganha menção honrosa em Locarno</tit>
+
+<p>O longa pernambucano Ventos de Agosto, de Gabriel Mascaro, levou uma menção honrosa no Festival de Locarno, na Suíça. O longa agradou a crítica e público quando foi exibido na semana passada. Foi o único representante brasileiro no evento.</p>
+<p>O prêmio principal foi vencido pelo filipino Lav Diaz e seu <i>Mula Sa Kung Ano Ang Soon (From What Is Before)</i>, que tem duração de mais de cinco horas. O prêmio especial do júri foi para Alex Ross Perry com o longa <i>Listen Up Phillip</i> (EUA). A melhor direção foi vencida pelo português Pedro Costa com o filme Cavalo Dinheiro.</p>
+<p>O júri de Locarno foi presidido este ano pela atriz brasileira Alice Braga. </p>
+<p><i>Ventos de Agosto</i> é o primeiro trabalho de ficção de Gabriel Mascaro, autor de <i>Domésticas e Um Lugar Ao Sol</i>. Mistura de documentário e drama, o longa traz a história da personagem Shirley, interpretada pela revelação Dandara de Morais. Ela chega da cidade grande para viver em uma pequena vila de pescadores em Alagoas. </p>
+</div>
+  
+  
+ <div style="padding: 0px 60px; margin-top: -32px; width: 550px; float: left;">
+ <tit style="width: 450px; margin-bottom: 60px;">Uzo Aduba, de Orange Is The New Black, vence o prêmio técnico do Emmy</tit>
+
+<p>Aconteceu nesse sábado (16) em Los Angeles a entrega dos prêmios técnicos do Emmy, chamados de Creative Arts Emmy. A atriz Uzo Aduba ganhou de atriz convidada por seu papel em <i>Orange Is The New Black,</i> da Netflix. i<Game Of Thrones, True Detective e Sherlock: His Last Vow</i>, também saíram vencedores. </p>
+<p>Como o Emmy, que premia o melhor da TV nos EUA, tem uma quantidade enorme de categorias, a organização divide a entrega dos troféus. É uma maneira de manter o espetáculo da premiação principal, que acontecerá no próximo dia 25. </p>
+<p>Veja a lista de alguns vencedores:
+</p><p>• <span style="padding: 0px 7px;"></span>Atriz convidada em série cômica Uzo Aduba (“Orange is the new black”)
+</p><p>• <span style="padding: 0px 7px;"></span>Atriz convidada em série dramática Allison Janney (“Masters of sex”)
+</p><p>• <span style="padding: 0px 7px;"></span>Ator convidado em série cômica Jimmy Fallon (“Saturday Night Live”)
+</p><p>• <span style="padding: 0px 7px;"></span>Ator convidado em série dramática Joe Morton (“Scandal”)
+</p><p>• <span style="padding: 0px 7px;"></span>Elenco de minissérie, telefilme ou especial (“Fargo”)
+</p><p>• <span style="padding: 0px 7px;"></span>Elenco de série dramática (“True detective”)
+</p><p>• <span style="padding: 0px 7px;"></span>Elenco de série cômica (“Orange is the new black”)
+</p><p>• <span style="padding: 0px 7px;"></span>Melhor narração Jeremy Irons (“Game of lions”)
+</p><p>• <span style="padding: 0px 7px;"></span>Melhor dublador Harry Shearer (“Os Simpsons”)
+</p><p>• <span style="padding: 0px 7px;"></span>Apresentador de reality ou programa de competição Jane Lynch (“Hollywood Game Night”)
+</p><p>• <span style="padding: 0px 7px;"></span>Reality sem estrutura fixa (“Deadliest Catch”)</p>
+</div>
+</div>
+
+
+             
+             
+             
+             
+           </li>
+       </ul>
+   </div>     
+</div>
+
+
+
+
+
+<div style="-webkit-animation: cores 10s linear infinite; padding: 10px; color: #fff; color: black; font: 700 9px open sans;">
+  SE PÁ CÊ VOLTA E A GENTE TROCA UMA IDEIA
+</div>
+
+
+		</div></center></body>
+	</html>
